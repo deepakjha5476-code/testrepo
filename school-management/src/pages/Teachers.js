@@ -4,12 +4,32 @@ function Teachers() {
   const [teachers, setTeachers] = useState([]);
   const [name, setName] = useState("");
   const [subject, setSubject] = useState("");
+  const [editId, setEditId] = useState(null);
 
-  const addTeacher = (e) => {
+  const handleSubmit = (e) => {
     e.preventDefault();
-    setTeachers([...teachers, { id: Date.now(), name, subject }]);
+
+    if (editId) {
+      // Update teacher
+      setTeachers(
+        teachers.map((teacher) =>
+          teacher.id === editId ? { ...teacher, name, subject } : teacher
+        )
+      );
+      setEditId(null);
+    } else {
+      // Add teacher
+      setTeachers([...teachers, { id: Date.now(), name, subject }]);
+    }
+
     setName("");
     setSubject("");
+  };
+
+  const handleEdit = (teacher) => {
+    setName(teacher.name);
+    setSubject(teacher.subject);
+    setEditId(teacher.id);
   };
 
   const deleteTeacher = (id) => {
@@ -20,7 +40,7 @@ function Teachers() {
     <div>
       <h2>Teachers</h2>
 
-      <form onSubmit={addTeacher} className="mb-3">
+      <form onSubmit={handleSubmit} className="mb-3">
         <input
           type="text"
           placeholder="Name"
@@ -37,22 +57,36 @@ function Teachers() {
           onChange={(e) => setSubject(e.target.value)}
           required
         />
-        <button className="btn btn-primary">Add Teacher</button>
+        <button className="btn btn-primary">
+          {editId ? "Update Teacher" : "Add Teacher"}
+        </button>
       </form>
 
       <ul className="list-group">
         {teachers.map((teacher) => (
           <li
             key={teacher.id}
-            className="list-group-item d-flex justify-content-between"
+            className="list-group-item d-flex justify-content-between align-items-center"
           >
-            {teacher.name} - {teacher.subject}
-            <button
-              className="btn btn-danger btn-sm"
-              onClick={() => deleteTeacher(teacher.id)}
-            >
-              Delete
-            </button>
+            <span>
+              {teacher.name} - {teacher.subject}
+            </span>
+
+            <div>
+              <button
+                className="btn btn-warning btn-sm me-2"
+                onClick={() => handleEdit(teacher)}
+              >
+                Edit
+              </button>
+
+              <button
+                className="btn btn-danger btn-sm"
+                onClick={() => deleteTeacher(teacher.id)}
+              >
+                Delete
+              </button>
+            </div>
           </li>
         ))}
       </ul>
