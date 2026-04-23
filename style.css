@@ -1,0 +1,562 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 60px;
+  background: #0b1a28;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.logo .brand {
+  color: #2fa4ff;
+}
+
+.logo .light {
+  color: #ffffff;
+  font-weight: 400;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #cfd8e3;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #2fa4ff;
+}
+
+.hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(180deg, #2c3e50 0%, #1f2f3f 100%);
+  padding: 40px 20px;
+  background-color: #0f1f2e;
+  color: #ffffff;
+}
+
+.hero-content {
+  max-width: 900px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 22px;
+  color: #d6dde6;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.btn {
+  padding: 14px 28px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.btn.primary {
+  border: 2px solid #2fa4ff;
+  color: #2fa4ff;
+  background: transparent;
+}
+
+.btn.primary:hover {
+  background-color: #2fa4ff;
+  color: #ffffff;
+}
+
+.btn.secondary {
+  border: 2px solid #2fa4ff;
+  color: #2fa4ff;
+  background: transparent;
+}
+
+.btn.secondary:hover {
+  background-color: #2fa4ff;
+  color: #ffffff;
+}
+
+.content {
+  width: 100%;
+  height: 800px;
+  border: 2px solid black;
+  text-align: center;
+  display: flex;
+  gap: 30px;
+}
+
+.c2 {
+  width: 350px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 12px;
+  grid-template-columns: repeat(3, 1fr);
+  background: #ffffff;
+}
+
+.box1 {
+  width: 1100px;
+  height: 300px;
+  border: 2px solid black;
+}
+
+.card1 h3 {
+  margin-bottom: 15px;
+}
+
+.card p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 15px;
+}
+
+.c14 {
+  width: 300px;
+  height: 270px;
+  border: 2px solid black;
+  border-radius: 5.4px;
+  text-align: center;
+  display: inline-block;
+}
+
+.vision {
+  width: 100%;
+  height: 1200px;
+  border: 2px solid black;
+  background: #f5f7fb;
+}
+
+.vision h1 {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  padding: 30px;
+  text-decoration: underline blue solid 3px;
+}
+
+.vision h2 {
+  padding: 20px 200px;
+  color: black;
+}
+
+.kk {
+  width: 100%;
+  height: 700px;
+  border: 2px solid black;
+  text-align: center;
+  background: lightskyblue;
+  padding: 80px 200px;
+}
+
+.kk p {
+  line-height: 1.6;
+  font-size: 20px;
+  color: black;
+}
+
+.rk {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  gap: 30px;
+  padding: 30px;
+  background: lightskyblue;
+}
+
+.rk p {
+  line-height: 1.6;
+  font-size: 15px;
+  color: white;
+}
+
+.rk h3 {
+  font-size: 25px;
+}
+
+.c1:hover {
+  transform: translateY(-6px);
+  border: red;
+}
+
+.c1 {
+  width: 45%;
+  height: 320px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.left,
+.right {
+  flex: 1;
+  padding: 30px;
+  border-radius: 12px;
+  background: #1e3c72;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.left {
+  background: #1e3c72;
+  color: #ffffff;
+}
+
+.why {
+  width: 100%;
+  height: 900px;
+  border: 2px solid black;
+  background: #c5ced6;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.choose {
+  max-width: 1100px;
+  margin: auto;
+}
+
+#title {
+  font-size: 55px;
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+#subtitle {
+  max-width: 800px;
+  margin: 0 auto 50px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.card-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  margin-bottom: 25px;
+}
+
+.card {
+  width: 370px;
+  height: 320px;
+  background: #fff;
+  border: none;
+  padding: 70px 60px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: 0.3s;
+}
+
+.card h3 {
+  margin: 15px 0;
+  color: #2c3e50;
+}
+
+.card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  background-color: #1e3c72;
+}
+
+.wide-card:hover {
+  transform: translateY(-5px);
+  background-color: #1e3c72;
+}
+
+.icon {
+  font-size: 36px;
+  color: #2a7db8;
+}
+
+.wide-card {
+  width: 1170px;
+  height: 220px;
+  background: #fff;
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.wide-card h3 {
+  margin: 15px 0;
+  color: #2c3e50;
+}
+
+.wide-card p {
+  color: #666;
+  line-height: 1.6;
+}
+
+.our {
+  width: 100%;
+  height: 900px;
+  border: 2px solid black;
+  background: #c05ac4;
+  text-align: center;
+}
+
+.Services {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 40px;
+  ;
+}
+
+.sk {
+  width: 100%;
+  height: 240px;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 30px;
+}
+
+.sk h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.sk:hover {
+  background: #0f1f2e;
+  color: white;
+  transform: translateY(-8px);
+}
+
+.industries {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.industries h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+}
+
+.dk {
+  width: 100%;
+  height: 520px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 40px 47px;
+}
+
+.serve {
+  width: 270px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 20px;
+  padding: 50px 47px;
+}
+
+.serve1 {
+  width: 420px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+.serve p {
+  font-size: 20px;
+}
+
+.serve:hover {
+  transform: translateY(-5px);
+  background-color: #1f2f3f;
+}
+
+.serve1:hover {
+  transform: translateY(-5px);
+  background-color: #1f2f3f;
+}
+
+.job {
+  width: 100%;
+  height: 660px;
+  border: none;
+  border-radius: 7px;
+  background: rgb(3, 44, 105);
+  text-align: center;
+  justify-content: space-between;
+  place-items: center;
+  padding: 70px 30px;
+}
+
+.job p {
+  font-size: 19px;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+.c11 {
+  width: 620px;
+  height: 360px;
+  border: none;
+  border-radius: 7px;
+  background: rgb(99, 157, 228);
+  text-align: center;
+  justify-content: center;
+  padding: 30px 10px;
+}
+
+.c8 {
+  width: 100%;
+  height: 1280px;
+  border: 2px solid black;
+  border-radius: 7px;
+  background: lightskyblue;
+  text-align: center;
+  padding: 30px;
+}
+
+.c7 {
+  width: 1100px;
+  height: 330px;
+  border: none;
+  background: rgba(136, 173, 190, 0.685);
+  border-radius: 7px;
+  text-align: left;
+  margin-left: 110px;
+  padding: 50px 15px;
+}
+
+.send {
+  width: 1100px;
+  height: 830px;
+  border: none;
+  background: #0b1a28;
+  border-radius: 7px;
+  place-items: center;
+  margin-left: 110px;
+}
+
+.send h1 {
+  padding: 30px;
+}
+
+.c5 {
+  width: 900px;
+  height: 690px;
+  border: none;
+  background: navy;
+  border-radius: 7px;
+  place-items: center;
+  padding: 30px;
+}
+
+.message {
+  width: 800px;
+  height: 100px;
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  background: rgb(107, 216, 235);
+}
+
+.footer {
+  width: 100%;
+  height: 400px;
+  background: #1f3a52;
+  color: #fff;
+  padding: 60px 20px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.footer-box h3 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #4da3ff;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.footer-box ul li {
+  margin-bottom: 10px;
+}
+
+.footer-box ul li a:hover {
+  color: #4da3ff;
+}
+
+.footer-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 4px;
+}
+
+.footer-box button {
+  width: 100%;
+  padding: 10px;
+  background: #3a84b4;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #3b556d;
+  margin-top: 40px;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.scroll-top {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: #3a84b4;
+  color: #fff;
+  padding: 12px 15px;
+  border-radius: 50%;
+  text-decoration: none;
+  font-size: 18px;
+}

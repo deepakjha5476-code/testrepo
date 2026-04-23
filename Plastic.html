@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbar {
+            height: 100%;
+            height: 150px;
+            border: 2px solid red;
+            /* margin: 20px 50px; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            /* padding: 15px 30px; */
+            background: white;
+            border-radius: 18px;
+        }
+
+        .logo {
+            font-size: 22px;
+            font-weight: 600;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 28px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #cfd8e3;
+            font-size: 15px;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #2fa4ff;
+        }
+
+        #btn {
+            border: 2px solid #2fa4ff;
+            color: #2fa4ff;
+            background: transparent;
+            padding: 14px 28px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        .hero {
+            height: 350px;
+            background: url('https://www.skncosmetics.com/wp-content/uploads/2022/03/Face-Plastic-Surgery-in-Pakistan.jpg') no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .plastic {
+            height: 1200px;
+            border: 2px solid black;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+            padding: 30px;
+        }
+
+        .dk {
+            width: 270px;
+            height: 450px;
+            border: 2px solid red;
+            border-radius: 15px;
+            box-shadow: 2px 2px 2px 2px red;
+        }
+
+        .footer {
+            width: 100%;
+            height: 330px;
+            background: black;
+            color: #fff;
+            padding: 60px 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
+
+        .footer-box h3 {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4da3ff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .footer-box ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-box ul li a:hover {
+            color: white;
+        }
+
+        .footer-box input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .footer-box button {
+            width: 100%;
+            padding: 10px;
+            background: #3a84b4;
+            border: none;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .footer-bottom {
+            border-radius: 30px;
+            border-top: 1px solid #3b556d;
+            margin-top: 80px;
+            padding-top: 80px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <span class="light">LOGO</span>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">bog</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li id="btn"><a href="#">Book appointmen</a></li>
+        </nav>
+    </div>
+    <div class="hero">
+        <h1>Our Services</h1>
+    </div>
+    <div>
+        <h3>ABOUT US</h3>
+        <h1>WELCOME TO THE CLINIC</h1>
+        <p>Experience personalized skin care guided by certified experts.
+            We combine advanced science with proven safety standards.
+            Every treatment is designed with aesthetic precision.
+            Enhancing your natural beauty while building lasting confidence.
+        </p>
+        <button>ABOUT US</button>
+    </div>
+    <div class="plastic">
+        <div class="dk">
+            <h2>Botox And Dermal Fillers</h2>
+            <p>Achieve a smoother, appearance with a </p>
+            <p>Botox and dermal fillers.</p>
+            <button>Book Appointment</button>
+        </div>
+        <div class="dk">
+            <h2>Botox And Dermal Fillers</h2>
+            <p>Achieve a smoother, appearance with a </p>
+            <p>Botox and dermal fillers.</p>
+            <button>Book Appointment</button>
+        </div>
+        <div class="dk">
+            <h2>Botox And Dermal Fillers</h2>
+            <p>Achieve a smoother, appearance with a </p>
+            <p>Botox and dermal fillers.</p>
+            <button>Book Appointment</button>
+        </div>
+        <div class="dk">
+            <h2>Botox And Dermal Fillers</h2>
+            <p>Achieve a smoother, appearance with a </p>
+            <p>Botox and dermal fillers.</p>
+            <button>Book Appointment</button>
+        </div>
+        <div class="dk">
+            <h2>Botox And Dermal Fillers</h2>
+            <p>Achieve a smoother, appearance with a </p>
+            <p>Botox and dermal fillers.</p>
+            <button>Book Appointment</button>
+        </div>
+        <div class="dk">
+            <h2>Botox And Dermal Fillers</h2>
+            <p>Achieve a smoother, appearance with a </p>
+            <p>Botox and dermal fillers.</p>
+            <button>Book Appointment</button>
+        </div>
+        <div class="dk">
+            <h2>Botox And Dermal Fillers</h2>
+            <p>Achieve a smoother, appearance with a </p>
+            <p>Botox and dermal fillers.</p>
+            <button>Book Appointment</button>
+        </div>
+        <div class="dk">
+            <h2>Botox And Dermal Fillers</h2>
+            <p>Achieve a smoother, appearance with a </p>
+            <p>Botox and dermal fillers.</p>
+            <button>Book Appointment</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-box">
+                <h3>Findix Private Limited</h3>
+                <p>
+                    We bridge the gap between exceptional talent and innovative
+                    organizations, creating meaningful connections that drive growth
+                    and success.
+                </p>
+            </div>
+            <div class="footer-box">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Services</a></li>
+                    <li><a href="#">Job Seekers</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Resources</h3>
+                <ul>
+                    <li>Skin Care Tips</li>
+                    <li>Before & After</li>
+                    <li>Patient Reviews</li>
+                    <li>Blog</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>123 SkinCare Clinic, City Name</p>
+                <li><a href="#">support@yourclinic.com</a></li>
+                <li><a href="#">+91 12345 67890</a></li>
+                <button>Free Consultation</button>
+            </div>
+        </div>
+        <a href="#" class="scroll-top">↑</a>
+    </footer>
+
+</body>
+
+</html>
