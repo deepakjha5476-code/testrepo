@@ -6,15 +6,33 @@
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        } */
+
+        .top-bar {
+            width: 100%;
+            height: 200px;
+            background: #3fa3ad;
+            color: white;
+            padding: 8px 40px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
         .navbar {
-            height: 100%;
-            height: 150px;
-            border: 2px solid red;
-            /* margin: 20px 50px; */
+            height: 1000px;
+            height: 50px;
+            border: 2px solid black;
+            /* margin: 20px 40px; */
             display: flex;
             justify-content: space-between;
             align-items: center;
-            /* padding: 15px 30px; */
+            padding: 150px 30px;
             background: white;
             border-radius: 18px;
         }
@@ -23,6 +41,17 @@
             font-size: 22px;
             font-weight: 600;
         }
+
+        /* .menu {
+            display: flex;
+            gap: 28px;
+            list-style: none;
+            text-decoration: none;
+            color: #cfd8e3;
+            font-size: 15px;
+            transition: color 0.3s;
+            font-weight: 600;
+        } */
 
         .nav-links {
             list-style: none;
@@ -62,6 +91,51 @@
             align-items: center;
             justify-content: center;
             position: relative;
+        }
+
+        .about {
+            height: 580px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: space-between;
+            /* align-items: center; */
+            background: white;
+        }
+
+        .welcome {
+            padding: 90px 90px;
+        }
+
+        .welcome h3 {
+            color: #2fa4ff;
+        }
+
+        .welcome h1 {
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        .welcome p {
+            font-size: 20px;
+            line-height: 1.6;
+            /* padding: 20px 0px; */
+        }
+
+        .welcome button {
+            width: 200px;
+            height: 50px;
+            background: #2fa4ff;
+            color: white;
+            border: none;
+            border-radius: 40px;
+            font-size: 14px;
+        }
+
+        #about-image img {
+            width: 700px;
+            height: 500px;
+            border: none;
+            padding: 20px;
         }
 
         .plastic {
@@ -173,14 +247,6 @@
             text-decoration: none;
         }
 
-        /* .footer-box input {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: none;
-            border-radius: 4px;
-        } */
-
         .footer-box button {
             width: 200px;
             height: 50px;
@@ -194,11 +260,20 @@
 </head>
 
 <body>
+    <div class="top-bar">
+        <div class="left">
+            📞 +91 00000 00000
+            ✉️ Info@Pinuxi.Com
+        </div>
+        <div class="right">
+            ✉️ Info@Pinuxi.Com
+        </div>
+    </div>
     <div class="navbar">
         <div class="logo">
-            <span class="light">LOGO</span>
+            <h3>LOGO</h3>
         </div>
-        <nav>
+        <nav class="menu">
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About</a></li>
@@ -212,15 +287,20 @@
     <div class="hero">
         <h1>Our Services</h1>
     </div>
-    <div>
-        <h3>ABOUT US</h3>
-        <h1>WELCOME TO THE CLINIC</h1>
-        <p>Experience personalized skin care guided by certified experts.
-            We combine advanced science with proven safety standards.
-            Every treatment is designed with aesthetic precision.
-            Enhancing your natural beauty while building lasting confidence.
-        </p>
-        <button>ABOUT US</button>
+    <div class="about">
+        <div class="welcome">
+            <h3>ABOUT US</h3>
+            <h1>WELCOME TO <br> THE CLINIC</h1>
+            <p>Experience personalized skin care guided by certified experts.
+                We combine advanced science with proven safety standards.
+                Every treatment is designed with aesthetic precision.
+                Enhancing your natural beauty while building lasting confidence.
+            </p>
+            <button>ABOUT US</button>
+        </div>
+        <div id="about-image">
+            <img src="https://live.staticflickr.com/5675/30072215853_8c26d892e3_n.jpg" alt="">
+        </div>
     </div>
     <div class="plastic">
         <div class="dk">
