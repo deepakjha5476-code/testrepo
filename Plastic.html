@@ -12,90 +12,69 @@
             box-sizing: border-box;
             font-family: Arial, sans-serif;
         } */
-
         .top-bar {
             width: 100%;
-            height: 200px;
-            background: #3fa3ad;
+            height: 70px;
+            background: #4aa3ad;
             color: white;
-            padding: 8px 40px;
             display: flex;
             justify-content: space-between;
+            padding: 8px 40px;
             font-size: 14px;
         }
 
         .navbar {
-            height: 1000px;
-            height: 50px;
-            border: 2px solid black;
-            /* margin: 20px 40px; */
+            width: 90%;
+            background: #fff;
+            margin: -30px auto 0;
+            border-radius: 17px;
+            padding: 20px 30px;
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            padding: 150px 30px;
-            background: white;
-            border-radius: 18px;
+            justify-content: space-between;
         }
 
-        .logo {
-            font-size: 22px;
-            font-weight: 600;
+        .navbar h1 {
+            font-size: 24px;
+            font-weight: bold;
         }
-
-        /* .menu {
-            display: flex;
-            gap: 28px;
-            list-style: none;
-            text-decoration: none;
-            color: #cfd8e3;
-            font-size: 15px;
-            transition: color 0.3s;
-            font-weight: 600;
-        } */
 
         .nav-links {
-            list-style: none;
             display: flex;
-            gap: 28px;
+            list-style: none;
+            gap: 30px;
         }
 
-        .nav-links a {
-            text-decoration: none;
-            color: #cfd8e3;
-            font-size: 15px;
-            transition: color 0.3s;
+        .nav-links li {
+            cursor: pointer;
+            color: #333;
         }
 
-        .nav-links a:hover,
-        .nav-links a.active {
-            color: #2fa4ff;
-        }
-
-        #btn {
-            border: 2px solid #2fa4ff;
-            color: #2fa4ff;
-            background: transparent;
-            padding: 14px 28px;
-            border-radius: 40px;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            letter-spacing: 0.5px;
-            transition: all 0.3s ease;
+        .navbar button {
+            background: #4aa3ad;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
         }
 
         .hero {
-            height: 350px;
-            background: url('https://www.skncosmetics.com/wp-content/uploads/2022/03/Face-Plastic-Surgery-in-Pakistan.jpg') no-repeat center/cover;
+            height: 300px;
+            background: url('https://wallpapercave.com/wp/wp10190947.jpg') no-repeat center/cover;
             display: flex;
             align-items: center;
             justify-content: center;
-            position: relative;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 70px;
         }
 
         .about {
             height: 580px;
-            border: 2px solid black;
+            border: none;
             display: flex;
             justify-content: space-between;
             /* align-items: center; */
@@ -263,26 +242,24 @@
     <div class="top-bar">
         <div class="left">
             📞 +91 00000 00000
-            ✉️ Info@Pinuxi.Com
+            <span> | </span>
+            ✉ info@pinuxi.com
         </div>
         <div class="right">
-            ✉️ Info@Pinuxi.Com
+            ✉ info@pinuxi.com
         </div>
     </div>
     <div class="navbar">
-        <div class="logo">
-            <h3>LOGO</h3>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">bog</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li id="btn"><a href="#">Book appointmen</a></li>
-        </nav>
+        <h1>LOGO</h1>
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Products</li>
+            <li>Services</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+        </ul>
+        <button>Book Appointment</button>
     </div>
     <div class="hero">
         <h1>Our Services</h1>
