@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .top-bar {
+            width: 100%;
+            height: 75px;
+            background: #4aa3ad;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 40px;
+            font-size: 14px;
+        }
+
+        .navbar {
+            width: 90%;
+            background: #fff;
+            margin: -35px auto -35px;
+            position: relative;
+            z-index: 10;
+            border-radius: 17px;
+            padding: 20px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar h1 {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links li {
+            cursor: pointer;
+            color: #333;
+        }
+
+        .navbar button {
+            background: #4aa3ad;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 25px;
+            cursor: pointer;
+        }
+
+        .Contact {
+            width: 100%;
+            height: 800px;
+            border: none;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 90px;
+            margin: -40px auto 0;
+        }
+
+        .Information {
+            width: 100%;
+            height: 620px;
+            border: 2px solid black;
+            background-color: white;
+            padding: 10px 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .left {
+            width: 50%;
+            height: 100%;
+        }
+
+        .left img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        form {
+            width: 50%;
+            height: 100%;
+        }
+
+        .right {
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+        }
+
+        .right p {
+            margin-bottom: 30px;
+        }
+
+        .input-row {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 10px;
+        }
+
+        .input-group {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+
+        .input-group label {
+            margin-bottom: 5px;
+            color: #555;
+            font-weight: 500;
+        }
+
+        .right input {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            padding: 8px 0;
+            outline: none;
+        }
+
+        .right textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #ccc;
+            outline: none;
+        }
+
+        .right button {
+            background: #4aa3ad;
+            color: white;
+            border: none;
+            padding: 20px 30px;
+            border-radius: 25px;
+            cursor: pointer;
+            margin-top: 50px;
+        }
+
+        .contact {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .contact-item img {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+        }
+
+        .contact-item p {
+            margin: 0;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top-bar">
+        <div class="left">
+            📞 +91 00000 00000
+            <span> | </span>
+            ✉ info@pinuxi.com
+        </div>
+        <div class="right">
+            ✉ info@pinuxi.com
+        </div>
+    </div>
+    <div class="navbar">
+        <h1>LOGO</h1>
+        <ul class="nav-links">
+            <li>Home</li>
+            <li>About us</li>
+            <li>Products</li>
+            <li>Services</li>
+            <li>Blog</li>
+            <li>Contact Us</li>
+        </ul>
+        <button>Book Appointment</button>
+    </div>
+    <div class="Contact">
+        <div class="Information">
+            <div class="left">
+                <img src="https://tse4.mm.bing.net/th/id/OIP.idbx6oPO342XoUYUWzcTpwHaF9?pid=Api&P=0&h=180" alt="">
+            </div>
+            <form>
+                <div class="right">
+                    <h1>Contact Information</h1>
+                    <p>Say something to start a live chat!</p>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>First Name</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-group">
+                            <label>Last Name</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone Number</label>
+                            <input type="text" value="+91 00000 00000">
+                        </div>
+                    </div>
+                    <div class="input-group">
+                        <label>Message</label>
+                        <textarea placeholder="Write your message..."></textarea>
+                    </div>
+                    <button>Send Message</button>
+            </form>
+            <div class="contact">
+                <div class="contact-item">
+                    <img src="https://www.freeiconspng.com/uploads/phone-icon-01-18.png" alt="">
+                    <p>+91 00000 00000</p>
+                </div>
+                <div class="contact-item">
+                    <img src="https://static.vecteezy.com/system/resources/previews/014/440/980/original/email-message-icon-design-in-blue-circle-png.png"
+                        alt="">
+                    <p>info@pinuxi.com</p>
+                </div>
+                <div class="contact-item">
+                    <img src="https://static.vecteezy.com/system/resources/previews/000/499/476/original/location-icon-design-vector.jpg"
+                        alt="">
+                    <p>132 Dartmouth Street Boston,
+                        Massachusetts 02156 United States
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
