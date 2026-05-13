@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <style>
+        .hero {
+            height: 350px;
+            background: url('https://tse1.mm.bing.net/th/id/OIP.DhMsOm0FJQNBot1MbjvSngHaDS?pid=Api&P=0&h=180') no-repeat center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: -40px auto 0;
+        }
+
+        .hero h1 {
+            color: white;
+            font-size: 70px;
+        }
+
+        .blog {
+            width: 100%;
+            height: 500px;
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .right {
+            width: 70%;
+            height: 1500px;
+            background-color: lightblue;
+        }
+
+        .left {
+            width: 30%;
+            height: 800px;
+            padding: 20px;
+        }
+
+        .sidebar {
+            width: 300px;
+            height: 650px;
+            border: none;
+            border-radius: 15px;
+            background: #fff;
+            padding: 10px 20px;
+            box-shadow: 10px 10px 20px rgba(0, 0, 0, 5);
+        }
+
+        .sidebar h2 {
+            margin-bottom: 10px;
+        }
+
+        .sidebar input[type="range"] {
+            width: 100%;
+        }
+
+        .sidebar button {
+            width: 120px;
+            background: #4aa3af;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 20px;
+            cursor: pointer;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            padding: 8px 0;
+            cursor: pointer;
+        }
+
+        .sidebar .active {
+            color: #4aa3af;
+            font-weight: bold;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .tag {
+            background: #eee;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hero">
+        <h1>BLOG</h1>
+    </div>
+    <div class="blog">
+        <div class="right">
+            <img src="" alt="">
+        </div>
+        <div class="left">
+            <div class="sidebar">
+                <h2>Search</h2>
+                <input type="text" placeholder="Search">
+                <h2>Categories</h2>
+                <ul>
+                    <li>Aesthetic Treatments (6)</li>
+                    <li>Skin Care (8)</li>
+                    <li>Dental Care (4)</li>
+                    <li>Dental Care (4)</li>
+                    <li>Facial Procedures (5)</li>
+                    <li>Wellness & Health (3)</li>
+                    <li>Clinic News (2)</li>
+                    <li>Popular Articles (5)</li>
+                    <li>Trending Topics (4)</li>
+                    </li>
+                    <h3>Tags</h3>
+                    <div class="tags">
+                        <span class="tag active">Face</span>
+                        <span class="tag">Eyes</span>
+                        <span class="tag">Skin Care</span>
+                        <span class="tag">Miraculous</span>
+                        <span class="tag">Eyes</span>
+                        <span class="tag">Skin Care</span>
+                        <span class="tag">Prefection</span>
+                        <span class="tag">Eyes</span>
+                    </div>
+            </div>
+        </div>
+</body>
+
+</html>
