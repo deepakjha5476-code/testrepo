@@ -166,7 +166,7 @@
         .contact-item {
             display: flex;
             align-items: center;
-            gap: 15px;
+            gap: 10px;
         }
 
         .contact-item img {
@@ -178,6 +178,7 @@
         .contact-item p {
             margin: 0;
             color: #333;
+            white-space: nowrap;
         }
     </style>
 </head>
@@ -243,19 +244,25 @@
             <div class="contact">
                 <div class="contact-item">
                     <img src="https://www.freeiconspng.com/uploads/phone-icon-01-18.png" alt="">
-                    <p>+91 00000 00000</p>
+                    <div>
+                        <p>+91 00000 00000</p>
+                    </div>
                 </div>
                 <div class="contact-item">
                     <img src="https://static.vecteezy.com/system/resources/previews/014/440/980/original/email-message-icon-design-in-blue-circle-png.png"
                         alt="">
-                    <p>info@pinuxi.com</p>
+                    <div>
+                        <p>info@pinuxi.com</p>
+                    </div>
                 </div>
                 <div class="contact-item">
                     <img src="https://static.vecteezy.com/system/resources/previews/000/499/476/original/location-icon-design-vector.jpg"
                         alt="">
-                    <p>132 Dartmouth Street Boston,
-                        Massachusetts 02156 United States
-                    </p>
+                    <div>
+                        <p>132 Dartmouth Street Boston,<br>
+                            Massachusetts 02156 United States
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
