@@ -84,11 +84,6 @@
             font-size: 45px;
         }
 
-
-        /* body {
-            background: #f5f5f5;
-        } */
-
         .home {
             width: 100%;
             height: 600px;
@@ -250,6 +245,139 @@
             font-size: 15px;
         }
 
+        .review-section {
+            text-align: center;
+            padding: 10px 60px;
+            position: relative;
+        }
+
+        .review-header {
+            grid-column: 1 / -1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .review-header h1 {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        .review-header p {
+            font-size: 25px;
+            color: gold;
+        }
+
+        .bg-box {
+            width: 75%;
+            height: 450px;
+            background: #d7eef2;
+            border-radius: 20px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 150px;
+            z-index: -1;
+        }
+
+        .review-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 380px;
+            background: #fff;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: left;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            margin-top: 100px;
+        }
+
+        .top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .profile {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            column-gap: 10px;
+            align-items: center;
+        }
+
+        .profile img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            background: #c9f1c9;
+            grid-column: 1;
+            grid-row: 1 / 3;
+        }
+
+        .profile h3 {
+            font-size: 18px;
+            grid-column: 2;
+            grid-row: 1;
+            align-self: end;
+        }
+
+        .profile p {
+            color: gray;
+            font-size: 14px;
+            grid-column: 2;
+            grid-row: 2;
+            align-self: start;
+        }
+
+        .quote {
+            font-size: 50px;
+            color: #c6d2f5;
+            font-weight: bold;
+        }
+
+        .review-text {
+            color: #333;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .stars {
+            color: orange;
+            font-size: 20px;
+        }
+
+        .dots {
+            margin-top: 20px;
+        }
+
+        .dots span {
+            width: 8px;
+            height: 8px;
+            background: #999;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 4px;
+        }
+
+        .dots .active {
+            background: brown;
+        }
+
         .cart {
             width: 300px;
             height: 400px;
@@ -295,7 +423,7 @@
         .our {
             width: 100%;
             height: 670px;
-            border: 2px solid red;
+            border: none;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -306,7 +434,7 @@
             width: 30%;
             height: 100%;
             padding: 20px;
-            border: 2px solid black;
+            border: none;
         }
 
         .office h1 {
@@ -329,8 +457,6 @@
         }
 
         .office ul {
-            /* margin-top: 20px; */
-            /* list-style: none; */
             padding: 15px 20px;
             line-height: 2.4;
         }
@@ -338,7 +464,7 @@
         .office-img {
             width: 70%;
             height: 100%;
-            border: 2px solid green;
+            border: none;
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
@@ -357,6 +483,93 @@
             object-fit: cover;
             border-radius: 22px;
             padding: 0px 10px;
+        }
+
+        .footer {
+            width: 100%;
+            height: 470px;
+            background: black;
+            color: #fff;
+            padding: 60px 20px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
+
+        .subscribe {
+            padding: 10px 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .subscribe input {
+            width: 230px;
+            height: 15px;
+            border: none;
+            border-radius: 70px;
+            padding: 12px;
+            flex: 1;
+        }
+
+        .subscribe button {
+            background: #5cc0c8;
+            border: none;
+            border-radius: 70px;
+            padding: 12px 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .subscribe .social-icons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: nowrap;
+        }
+
+        .subscribe .social-icons img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .footer-box {
+            padding: 10px;
+            gap: 60px;
+        }
+
+
+        .footer-box h3 {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4da3ff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+
+        .footer-box ul li {
+            margin-bottom: 10px;
+            list-style: none;
+        }
+
+        .footer-box ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-box button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 70px;
+            padding: 10px;
+            background: #3a84b4;
+            color: #fff;
         }
     </style>
 </head>
@@ -463,6 +676,85 @@
         </div>
     </div>
 
+    <div class="review-section">
+        <div class=review-header>
+            <h1>Patient Reviews</h1>
+            <p>Trusted By Our Patients</p>
+        </div>
+        <div class="bg-box"></div>
+
+        <div class="review-container">
+            <div class="card">
+                <div class="top">
+                    <div class="profile">
+                        <img src="https://www.freeiconspng.com/uploads/cartoon-characters-girl-photo-png-4.png" alt="">
+                        <h3>Mirana Marci</h3>
+                        <p>3D Designer</p>
+                    </div>
+                    <div class="quote">”</div>
+                </div>
+                <p class="review-text">
+                    I’ve used other kits, but this one is the best.
+                    The attention to detail and usability are truly
+                    amazing for all designers. I highly recommend
+                    it for any type of project
+                </p>
+                <div class="bottom">
+                    <div class="quote">“</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="top">
+                    <div class="profile">
+                        <img src="https://www.freeiconspng.com/uploads/cartoon-characters-girl-photo-png-4.png" alt="">
+                        <h3>Mirana Marci</h3>
+                        <p>3D Designer</p>
+                    </div>
+                    <div class="quote">”</div>
+                </div>
+                <p class="review-text">
+                    I’ve used other kits, but this one is the best.
+                    The attention to detail and usability are truly
+                    amazing for all designers. I highly recommend
+                    it for any type of project
+                </p>
+                <div class="bottom">
+                    <div class="quote">“</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="top">
+                    <div class="profile">
+                        <img src="https://www.freeiconspng.com/uploads/cartoon-characters-girl-photo-png-4.png" alt="">
+                        <h3>Mirana Marci</h3><br>
+                        <p>3D Designer</p>
+                    </div>
+                    <div class="quote">”</div>
+                </div>
+                <p class="review-text">
+                    I’ve used other kits, but this one is the best.
+                    The attention to detail and usability are truly
+                    amazing for all designers. I highly recommend
+                    it for any type of project
+                </p>
+                <div class="bottom">
+                    <div class="quote">“</div>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+        <div class="dots">
+            <span></span>
+            <span></span>
+            <span class="active"></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+
 
     <div class="plastic">
         <div class="plastic-header">
@@ -494,6 +786,7 @@
             <p>13 year Exp </p>
         </div>
     </div>
+
 
     <div class="our">
         <div class="office">
@@ -528,6 +821,49 @@
                 alt="">
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="subscribe">
+                <h3>Subscribe for Skin Updates</h3>
+                <input type="email" placeholder="Email Address">
+                <button>Subscribe</button>
+                <div class="social-icons">
+                    <img src="https://static.vecteezy.com/system/resources/previews/022/498/377/original/3d-linkedin-logo-icon-isolated-on-transparent-background-free-png.png"
+                        alt="">
+                    <img src="https://freepnglogo.com/images/all_img/1707222563twitter-logo-png.png" alt="">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.Amcd6uomcBrkzfHXrg14gAHaHa?pid=Api&P=0&h=180" alt="">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="">
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Doctors</a></li>
+                    <li><a href="#">Book Appointment</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Resources</h3>
+                <ul>
+                    <li>Skin Care Tips</li>
+                    <li>Before & After</li>
+                    <li>Patient Reviews</li>
+                    <li>Blog</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>123 SkinCare Clinic, City Name</p>
+                <p>support@yourclinic.com</p>
+                <p>+91 12345 67890</p>
+                <button>Free Consultation</button>
+            </div>
+        </div>
+    </footer>
 
 
 </body>
