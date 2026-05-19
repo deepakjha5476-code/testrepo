@@ -13,6 +13,169 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        .about {
+            width: 100%;
+            height: 580px;
+            border: 2px solid red;
+            display: flex;
+            justify-content: space-between;
+            background: white;
+        }
+
+        .welcome {
+            padding: 90px 90px;
+
+        }
+
+        .welcome h3 {
+            color: #2fa4ff;
+        }
+
+        .welcome h1 {
+            font-size: 50px;
+            line-height: 60px;
+        }
+
+        .welcome p {
+            font-size: 20px;
+            line-height: 1.6;
+            /* padding: 20px 0px; */
+        }
+
+        .welcome button {
+            width: 200px;
+            height: 50px;
+            background: #2fa4ff;
+            color: white;
+            border: none;
+            border-radius: 40px;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+
+        #about-image img {
+            width: 700px;
+            height: 500px;
+            border: none;
+            padding: 20px;
+        }
+
+        .about-section {
+            width: 100%;
+            padding: 60px 8%;
+        }
+
+        .about-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-text h5 {
+            color: #39b7d3;
+            font-size: 22px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .about-text h1 {
+            font-size: 70px;
+            line-height: 1.1;
+            color: #37474f;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+
+        .about-text p {
+            color: #7b7b7b;
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+
+        .about-btn {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 14px 40px;
+            background: #39b7d3;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 30px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .about-btn:hover {
+            background: #2397b1;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center;
+            position: relative;
+        }
+
+        .about-image img {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        /* Brand Section */
+
+        .brand-section {
+            margin-top: 70px;
+            text-align: center;
+        }
+
+        .brand-top,
+        .brand-bottom {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            color: #a7a7a7;
+            font-size: 13px;
+            margin: 20px 0;
+        }
+
+        .brand-top::before,
+        .brand-top::after,
+        .brand-bottom::before,
+        .brand-bottom::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #ddd;
+        }
+
+        .brand-logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 35px 0;
+        }
+
+        .logo-box {
+            flex: 1;
+            min-width: 120px;
+            text-align: center;
+            font-size: 28px;
+            font-weight: bold;
+            color: #4b4b6f;
+        }
+
+
         .plastic {
             height: 740px;
             border: none;
@@ -633,49 +796,209 @@
 
         .right-side {
             width: 55%;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
         }
 
         .faq-item {
-            width: 500px;
+            width: 620px;
             height: 100px;
-            border: 1px solid rgba(255, 255, 255, 0.5);
+            border: 2px solid rgba(255, 255, 255, 0.5);
             border-radius: 15px;
-            margin-bottom: 20px;
-            overflow: hidden;
+            /* margin-bottom: 20px; */
+            /* overflow: hidden; */
             background: rgba(255, 255, 255, 0.08);
         }
 
-        .faq-question {
-            padding: 25px;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            font-size: 20px;
+        .faq {
+            width: 620px;
+            height: 280px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            border-radius: 15px;
+            /* margin-bottom: 20px; */
+            /* overflow: hidden; */
+            background: rgba(255, 255, 255, 0.08);
         }
 
-        .faq-question span {
-            width: 35px;
-            height: 35px;
-            border-radius: 50%;
-            background: white;
-            color: #0f6a7a;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .faq h1 {
+            padding: 30px 10px;
+            font-size: 23px;
+            font-weight: 500;
+        }
+
+        .faq p {
+            font-size: 18px;
+            line-height: 1.6;
+            padding: 0px 10px;
+            font-weight: 100;
+        }
+
+        .faq-item h2 {
             font-size: 22px;
-            font-weight: bold;
+            padding: 20px 30px;
         }
 
-        .faq-answer {
-            padding: 0 25px 25px;
-            color: #d9edf2;
-            line-height: 1.8;
+
+        .footer {
+            width: 100%;
+            height: 470px;
+            background: black;
+            color: #fff;
+            padding: 60px 20px;
+            border-top-left-radius: 30px;
+            border-top-right-radius: 30px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
+
+        .subscribe {
+            padding: 10px 60px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .subscribe input {
+            width: 230px;
+            height: 15px;
+            border: none;
+            border-radius: 70px;
+            padding: 12px;
+            flex: 1;
+        }
+
+        .subscribe button {
+            background: #5cc0c8;
+            border: none;
+            border-radius: 70px;
+            padding: 12px 20px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .subscribe .social-icons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: nowrap;
+        }
+
+        .subscribe .social-icons img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .footer-box {
+            padding: 10px;
+            gap: 60px;
+        }
+
+
+        .footer-box h3 {
+            margin-bottom: 20px;
+            border-bottom: 2px solid #4da3ff;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+
+        .footer-box ul li {
+            margin-bottom: 10px;
+            list-style: none;
+        }
+
+        .footer-box ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .footer-box button {
+            width: 200px;
+            height: 50px;
+            border: none;
+            border-radius: 70px;
+            padding: 10px;
+            background: #3a84b4;
+            color: #fff;
         }
     </style>
 </head>
 
 <body>
+
+    <div class="about">
+        <div class="welcome">
+            <h3>ABOUT US</h3>
+            <h1>WELCOME TO <br> THE CLINIC</h1>
+            <p>Experience personalized skin care guided by certified experts.
+                We combine advanced science with proven safety standards.
+                Every treatment is designed with aesthetic precision.
+                Enhancing your natural beauty while building lasting confidence.
+            </p>
+            <button>ABOUT US</button>
+        </div>
+        <div id="about-image">
+            <img src="https://live.staticflickr.com/5675/30072215853_8c26d892e3_n.jpg" alt="">
+        </div>
+    </div>
+    <section class="brand-section">
+
+        <!-- Top Text -->
+
+        <div class="top-text">
+            <span>A+ Rated Service</span>
+            <span>A+ Rated Service</span>
+        </div>
+
+        <!-- Logos -->
+
+        <div class="logo-container">
+
+            <div class="logo-box">
+                <div class="logo-circle">P</div>
+                <div class="logo-text">Pyramax</div>
+            </div>
+
+            <div class="logo-box">
+                <div class="logo-circle">P</div>
+                <div class="logo-text">Pyramax</div>
+            </div>
+
+            <div class="logo-box">
+                <div class="logo-circle">P</div>
+                <div class="logo-text">Pyramax</div>
+            </div>
+
+            <div class="logo-box">
+                <div class="logo-circle">P</div>
+                <div class="logo-text">Pyramax</div>
+            </div>
+
+            <div class="logo-box">
+                <div class="logo-circle">P</div>
+                <div class="logo-text">Pyramax</div>
+            </div>
+
+            <div class="logo-box">
+                <div class="logo-circle">P</div>
+                <div class="logo-text">Pyramax</div>
+            </div>
+
+        </div>
+
+        <!-- Bottom Text -->
+
+        <div class="bottom-text">
+            <span>Recognized by top companies for quality and trust.</span>
+        </div>
+
+    </section>
+
 
     <div class="plastic">
         <div class="plastic-header">
@@ -988,8 +1311,6 @@
     </div>
 
     <div class="frequently">
-
-        <!-- Left Side -->
         <div class="left-side">
             <h1>Frequently <br> Asked <span>Questions</span></h1>
 
@@ -1013,53 +1334,87 @@
             </div>
         </div>
 
-        <!-- Right Side -->
+
         <div class="right-side">
 
-            <div class="faq-item">
-                <div class="faq-question">
-                    What is Webflow and why is it the best website builder?
-                    <span>−</span>
-                </div>
-                <div class="faq-answer">
-                    Webflow is a powerful visual development platform that allows designers
+            <div class="faq">
+                <h1>What is Webflow and why is it the best website builder?</h1>
+                <!-- <span>−</span> -->
+                <p>Webflow is a powerful visual development platform that allows designers
                     to build fully responsive websites without writing a single line of code. It
                     combines the flexibility of code with the simplicity of a visual editor,
                     empowering creators to bring their ideas to life faster and more
                     efficiently than ever before.
-                </div>
+                </p>
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">
-                    What is your favorite template from BRIX Templates?
-                    <span>+</span>
-                </div>
+                <h2>What is your favorite template from BRIX Templates?</h2>
+                <!-- <span>+</span> -->
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">
-                    How do you clone a Webflow Template from the Showcase?
-                    <span>+</span>
-                </div>
+                <h2>How do you clone a Webflow Template from the Showcase?</h2>
+                <!-- <span>+</span> -->
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">
-                    Why is BRIX Templates the best Webflow agency out there?
-                    <span>+</span>
-                </div>
+                <h2>Why is BRIX Templates the best Webflow agency out there?</h2>
+                <!-- <span>+</span> -->
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">
-                    How do you clone a Webflow Template from the Showcase?
-                    <span>+</span>
-                </div>
+                <h2>How do you clone a Webflow Template from the Showcase?</h2>
+                <!-- <span>+</span> -->
             </div>
 
         </div>
     </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="subscribe">
+                <h3>Subscribe for Skin Updates</h3>
+                <input type="email" placeholder="Email Address">
+                <button>Subscribe</button>
+                <div class="social-icons">
+                    <img src="https://static.vecteezy.com/system/resources/previews/022/498/377/original/3d-linkedin-logo-icon-isolated-on-transparent-background-free-png.png"
+                        alt="">
+                    <img src="https://freepnglogo.com/images/all_img/1707222563twitter-logo-png.png" alt="">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.Amcd6uomcBrkzfHXrg14gAHaHa?pid=Api&P=0&h=180" alt="">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="">
+                </div>
+            </div>
+            <div class="footer-box">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Doctors</a></li>
+                    <li><a href="#">Book Appointment</a></li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Resources</h3>
+                <ul>
+                    <li>Skin Care Tips</li>
+                    <li>Before & After</li>
+                    <li>Patient Reviews</li>
+                    <li>Blog</li>
+                    <li>FAQs</li>
+                </ul>
+            </div>
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>123 SkinCare Clinic, City Name</p>
+                <p>support@yourclinic.com</p>
+                <p>+91 12345 67890</p>
+                <button>Free Consultation</button>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
