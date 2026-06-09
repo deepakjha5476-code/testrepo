@@ -2,12 +2,228 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog-1</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog Card</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* body {
+            background: #f5f5f5;
+        } */
+
+        .blog-section {
+            width: 100%;
+            padding-bottom: 50px;
+            background: #fff;
+        }
+
+        .banner {
+            width: 100%;
+            height: 350px;
+            overflow: hidden;
+        }
+
+        .banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .blog-card {
+            width: 65%;
+            height: 250px;
+            background: #dfe8eb;
+            margin: -150px auto 0;
+            border-radius: 10px;
+            text-align: center;
+            padding: 30px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #4da7b8;
+            color: #fff;
+            padding: 8px 22px;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        .blog-card h2 {
+            font-size: 30px;
+            line-height: 40px;
+            margin-bottom: 20px;
+            color: #111;
+        }
+
+        #skin {
+            height: 150px;
+            border: 2px solid red;
+            border-radius: 0 30px 30px 0;
+            background-color: #4da7b8;
+            font-size: 20px;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .author {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .author img {
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+        }
+
+        .author p {
+            font-size: 20px;
+            color: black;
+        }
+
+        .content {
+            width: 75%;
+            margin: 50px auto;
+            color: #555;
+            line-height: 30px;
+            font-size: 18px;
+            padding: 10px 90px;
+        }
+
+        .content p {
+            margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        .content h3 {
+            color: #111;
+            margin: 30px 0 15px;
+        }
+
+        .gallery {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .gallery img {
+            width: 48%;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
 <body>
+
+    <section class="blog-section">
+
+        <div class="banner">
+            <img src="images/banner.jpg" alt="">
+        </div>
+
+        <div class="blog-card">
+            <span class="tag">SKINCARE</span>
+
+            <h2>Why Do Some Skincare Products Cause <br> Skin Reactions?</h2>
+
+            <div class="author">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.BVLxB8CbqkSbBBckNrY6_QHaHa?pid=Api&P=0&h=180" alt="">
+                <p><strong>Dr. Ayaan Khan</strong> &nbsp; Oct 10, 2024 &nbsp; 0 Comments</p>
+            </div>
+        </div>
+
+        <div class="content">
+            <p>
+                Quality skincare products hamesha safe honge, yeh zaroori nahi hota. Kabhi-kabhi strong
+                active ingredients ya fragrance sensitive skin ke liye irritation ka reason ban sakte hain. Har skin
+                type alag hoti hai aur jo product ek person par kaam karta hai, woh dusre par reaction bhi de
+                sakta hai. Isliye product use karne se pehle skin type aur ingredient list samajhna bahut
+                important hota hai
+            </p>
+
+            <p>
+                Skin reactions often occur when a product disrupts the skin’s natural barrier. Overuse or mixing
+                incompatible products can lead to redness, itching, or breakouts. Experimenting without proper
+                guidance may cause long-term skin issues. A simple and well-planned routine usually delivers
+                better results.
+            </p>
+
+            <h3>How to prevent skin reactions</h3>
+
+            <p>
+                Always perform a patch test before introducing a new product into your routine. New
+                treatments or products should be added gradually to allow the skin to adapt. Consistency,
+                patience, and professional advice play a key role in maintaining healthy and balanced skin.
+            </p>
+        </div>
+
+        <div class="gallery">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.Q2JijBcKtcWo6gGNjhCtAgHaEb?pid=Api&P=0&h=180" alt="">
+            <img src="https://tse1.mm.bing.net/th/id/OIP.Q2JijBcKtcWo6gGNjhCtAgHaEb?pid=Api&P=0&h=180" alt="">
+        </div>
+        <div class="content">
+            <p>
+                Understanding how skincare products interact with your skin is essential for achieving healthy
+                results. Many reactions occur when products are used without considering skin type or
+                ingredient compatibility. Proper knowledge and informed choices help reduce the risk of
+                irritation and discomfort. Consistent care and awareness play a key role in maintaining skin
+                balance.
+            </p>
+
+            <p>
+                Skin sensitivity often develops due to overuse of active ingredients or combining multiple
+                treatments at once. When the skin barrier is weakened, it becomes more prone to redness,
+                dryness, and breakouts. Choosing gentle formulations and following a structured routine can
+                protect long-term skin health. Professional advice ensures safer and more effective outcomes.
+            </p>
+            <p>
+                Maintaining healthy skin requires patience, consistency, and the right approach. Gradually
+                introducing new products allows the skin time to adapt and respond positively. Avoiding
+                unnecessary experimentation helps prevent unwanted reactions. A simple, well-planned skincare
+                routine delivers the best and most lasting results.
+            </p>
+
+            <p id="skin">
+                Healthy skin sirf treatments se nahi, balki sahi care, expert guidance aur patience se milti
+                hai. Jab aap apni skin ko samajhte hain aur uski zarurat ke hisaab se care karte hain, tab
+                natural glow automatically reflect hota hai.
+            </p>
+
+            <p>
+                Using the right skincare approach is essential for maintaining healthy and balanced skin. A wellplanned
+                routine helps improve texture, reduce irritation, and support long-term skin health.
+                When products are selected carefully, the skin responds more effectively over time. Consistency
+                and awareness make a visible difference
+            </p>
+
+            <h3>A thoughtful approach to every treatment</h3>
+
+            <p>
+                Every skin type has unique needs that require a personalized plan. Gentle techniques, quality
+                products, and expert guidance help achieve natural-looking results. A balanced routine supports
+                skin recovery and enhances overall appearance. Careful attention ensures safe, effective, and
+                lasting outcomes.
+            </p>
+        </div>
+
+    </section>
 
 </body>
 
